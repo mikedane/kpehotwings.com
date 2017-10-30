@@ -1,0 +1,62 @@
+# Site settings
+title: Kelly's Pub & Eatery | Scranton, PA Restaurant
+description: "Kelly's Pub & Eatery is a family friendly restaurant located at 1802 Cedar Avenue, Scranton, PA 18505. We are famous for our delicious Hot Wings. We also have a complete menu. Call us at 570.346.9758 for take out orders"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the name of your domain
+logo_url: svg/min/logo.svg
+
+# Hero
+hero:
+    hero_img: hero.png
+    hero_title: Home of Award Winning Wings
+    hero_description: Plus burgers, sandwiches, salads & full service bar offered in a down-to-earth setting with Irish touches.
+
+# Menu
+menu-file: kellys_pub_eatery_menu.pdf
+
+# Contact form
+api_token: # Enter API token here
+
+# Contact info
+contact:
+    phone: 570-346-9758
+    email: kellyspubandeatery@gmail.com
+    address: 1802 Cedar Avenue<br>Scranton PA<br>18505
+
+# Opening hours
+monday_tuesday: 4:00PM – 11:00PM
+wednesday_saturday: 4:00PM – 12:00PM
+sunday: Closed
+
+# Testimonials
+testimonials:
+    testimonials_img: parallax.png
+
+# Map
+map:
+    zoom: 17
+    address: 1802 Cedar Avenue, Scranton PA 18505
+    address_details: svg/min/logo.svg
+
+# Social settings
+facebook: https://www.facebook.com/Kellys-Pub-and-Eatery-180959338695076/
+
+# Footer
+copyright: © 2017 Kelly's Pub & Eatery - All rights reserved
+
+# Build settings
+markdown: kramdown
+
+exclude: [
+    package.json,
+    Gruntfile.js,
+    node_modules,
+    .sass-cache,
+    Gemfile,
+    Gemfile.lock,
+    .gitignore
+]
+
+# Theme Settings
+analytics:
+google_verification:
