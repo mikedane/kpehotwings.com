@@ -3,7 +3,10 @@
 # _helpers/shell-scripts/build_site.sh "git commit message"
 # ---------------------
 
+
 git config credential.username "mikedane"
+git pull origin gh-pages
+git pull origin master 
 
 echo "Deleting old publication"
 rm -rf _site
