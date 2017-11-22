@@ -1,12 +1,12 @@
 # ----- U S A G E -----
 # Call this script from the root directory of the project
-# _helpers/shell-scripts/build_site.sh "git commit message"
+# ./build_site.sh "git commit message"
 # ---------------------
 
 
 git config credential.username "mikedane"
 git pull origin gh-pages
-git pull origin master 
+git pull origin master
 
 echo "Deleting old publication"
 rm -rf _site
