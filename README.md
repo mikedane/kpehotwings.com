@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-# DentistSmile - Jekyll Theme
+# Kelly's Pub & Eatery
 
-A single page Jekyll theme for dental clinics. It's easily customizable and responsive. It comes with svg icons, google map and a working contact form. Docs can be found [here](http://obaez.com/dentistsmile-docs/).
-
-Here is a [live Demo](http://obaez.com/dentistsmile/)
-
-=======
-# kpehotwings.com
->>>>>>> 713d90af96bfccb4a60745173688317ad4c4082d
+A simple, Jekyll based website I built for Kelly's Pub & Eatery in Scranton PA. The website display's basic information about the restaurant, as well as photos and an awards slideshow. It also features an interactive map, which can provide directions to the restaurant. 
