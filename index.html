@@ -15,7 +15,8 @@ layout: default
 
     <div class="container-fluid">
 
-        <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 " >
+        <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 ">
+            <a target="_blank" href="https://www.onlyinyourstate.com/pennsylvania/best-wings-pa/" style="position: absolute; width: 150px; height: 160px; bottom:0px; right: 15px; border-radius: 30%; cursor: pointer;"></a>
             <img src="{{ site.baseurl }}/img/welcome.png" alt="Kelly's Pub & Eatery" >
         </div>
 
@@ -115,7 +116,7 @@ layout: default
 
     {% for images in site.data.gallery %}
         <div class="gallery-item expandable-box">
-            <div class="expandable-box-top">
+            <div class="">
                 <img src="{{ site.baseurl }}/img/gallery/{{ images.image_thumb }}" >
             </div>
        </div>
@@ -125,5 +126,6 @@ layout: default
 <!-- End Gallery -->
 
 <!-- Start Map -->
-<div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>"></div>
+<!-- <div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>"></div> -->
+<iframe id="location" style=" width:100%"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.2563883329067!2d-75.68067928419211!3d41.390238079263995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4df1a7303a1db%3A0xca6a3cffda8789d1!2s1802+Cedar+Ave%2C+Scranton%2C+PA+18505!5e0!3m2!1sen!2sus!4v1555361534577!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 <!-- End Map -->
