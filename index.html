@@ -92,10 +92,10 @@ layout: default
         <div class="container-fluid">
             <div id="testimonial-carousel">
                 {% for testimonial in site.data.testimonials %}
-                    <div class="testimonial-item">
-                        <svg class="icon icon-quote-left"><use xlink:href="#icon-trophy"></use></svg>
-                        <blockquote>
-                            <p>{{ testimonial.description }}</p>
+                    <div class="testimonial-item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <svg style="background-color: rgba(0, 0, 0, 0.7);"class="icon icon-quote-left"><use xlink:href="#icon-trophy"></use></svg>
+                        <blockquote style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px;">
+                            <p > {{ testimonial.description }}</p>
                             <footer>
                                 {{ testimonial.name }}
                                 <small>{{ testimonial.title }}</small>
