@@ -3,129 +3,187 @@ layout: default
 ---
 
 <!-- Start Hero -->
-<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;">
-    <div class="hero-content">
-        <div class="container-fluid">
-            <div class="hero-content-inner">
-                <h1>{{ site.hero.hero_title }}</h1>
-                <p>{{ site.hero.hero_description }}</p>
-            </div>
-        </div>
-    </div>
-
+<div
+  class="hero"
+  style="background: url('{{ site.baseurl }}/img/{{
+    site.hero.hero_img
+  }}') no-repeat; background-size: cover;"
+>
+  <div class="hero-content">
     <div class="container-fluid">
-
-        <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 ">
-            <a target="_blank" href="https://www.onlyinyourstate.com/pennsylvania/best-wings-pa/" style="position: absolute; width: 150px; height: 160px; bottom:0px; right: 15px; border-radius: 30%; cursor: pointer;"></a>
-            <img src="{{ site.baseurl }}/img/welcome.png" alt="Kelly's Pub & Eatery" >
-        </div>
-
+      <div class="hero-content-inner">
+        <h1>{{ site.hero.hero_title }}</h1>
+        <p>{{ site.hero.hero_description }}</p>
+      </div>
     </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 ">
+      <a
+        target="_blank"
+        href="https://www.onlyinyourstate.com/pennsylvania/best-wings-pa/"
+        style="position: absolute; width: 150px; height: 160px; bottom:0px; right: 15px; border-radius: 30%; cursor: pointer;"
+      ></a>
+      <img
+        src="{{ site.baseurl }}/img/welcome.png"
+        alt="Kelly's Pub & Eatery"
+      />
+    </div>
+  </div>
 </div>
 <!-- End Hero -->
 
 <!-- Start 3 columns -->
 <div class="three-shade-col" style="font-size:1.25em">
-    <div class="col-sm-4">
-        <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
-        <h3>Contact Us</h3>
-        <ul>
-            {% if site.contact.phone %}<li><strong>Phone:</strong> {{ site.contact.phone }}</li>{% endif %}
-            {% if site.contact.emergency %}<li><strong>Emergency:</strong> {{ site.contact.emergency }}</li>{% endif %}
-            {% if site.contact.email %}<li><strong>Email:</strong> {{ site.contact.email }}</li>{% endif %}
-        </ul>
-    </div>
-    <div class="col-sm-4">
-        <svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>
-        <h3>Kitchen Hours</h3>
-        <table>
-            <tbody>
-                <tr>
-                    <td>Mon - Tue</td>
-                    <td>{{ site.monday_tuesday }}</td>
-                </tr>
-                <tr>
-                    <td>Wed - Sat</td>
-                    <td>{{ site.wednesday_saturday }}</td>
-                </tr>
-                <tr>
-                    <td>Sun</td>
-                    <td>{{ site.sunday }}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="col-sm-4">
-        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
-        <h3>Location</h3>
-            <p>
-                {{ site.contact.address }}
-            </p>
-    </div>
+  <div class="col-sm-4">
+    <svg class="icon icon-envelope-o">
+      <use xlink:href="#icon-envelope-o"></use>
+    </svg>
+    <h3>Contact Us</h3>
+    <ul>
+      {% if site.contact.phone %}
+      <li><strong>Phone:</strong> {{ site.contact.phone }}</li>
+      {% endif %} {% if site.contact.emergency %}
+      <li><strong>Emergency:</strong> {{ site.contact.emergency }}</li>
+      {% endif %} {% if site.contact.email %}
+      <li><strong>Email:</strong> {{ site.contact.email }}</li>
+      {% endif %}
+    </ul>
+  </div>
+  <div class="col-sm-4">
+    <svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>
+    <h3>Kitchen Hours</h3>
+    <table>
+      <tbody>
+        <tr>
+          <td>Mon, Tue, Thur</td>
+          <td>{{ site.monday_tuesday_thursday }}</td>
+        </tr>
+        <tr>
+          <td>Wed, Fri, Sat</td>
+          <td>{{ site.wednesday_friday_saturday }}</td>
+        </tr>
+        <tr>
+          <td>Sun</td>
+          <td>{{ site.sunday }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-sm-4">
+    <svg class="icon icon-map-marker">
+      <use xlink:href="#icon-map-marker"></use>
+    </svg>
+    <h3>Location</h3>
+    <p>
+      {{ site.contact.address }}
+    </p>
+  </div>
 </div>
 <!-- End 3 columns -->
 
 <!-- Start About -->
 <div id="about" class="about">
-    <div class="container-fluid">
-        <h2 class="section-title">About Us</h2>
+  <div class="container-fluid">
+    <h2 class="section-title">About Us</h2>
 
-        <div class="row" style="margin:0px 15px 0px 15px;">
-<h3>Welcome to Kelly's!</h3>
-               <img src="img/about.png" alt="..." style="float:right; margin:15px;">
+    <div class="row" style="margin:0px 15px 0px 15px;">
+      <h3>Welcome to Kelly's!</h3>
+      <img src="img/about.png" alt="..." style="float:right; margin:15px;" />
 
-                     <p><b>Looking for the best Hot Wings in Northeast PA?</b></p>
-                     <p>Well, you have come to the right place! In addition to our famous hot wings we have a full menu with something for everyone. We are a family oriented restaurant in Scranton, PA we have a reputation for great food, great people and the best hot wings in Northeast Pennsylvania.</p>
-                     <p>Kelly's Wednesday Wing Night has become a very popular spot for Hot Wings and ice cold beer served in a friendly family atmosphere. Our Hot Wings have been honored with many awards in local wing contests and media surveys throughout Northeastern Pennsylvania. In addition to our wing night we have $2.00 domestic Pint night every Monday. Tuesday's are Tini' Tuesday at Kelly's. We have Martini specials for $4.00. Every lent we offer fish specials.</p>
-                     <p>With more than 25 years in business we have established ourselves as the place to go for Hot Wings in Scranton, PA! Kelly's pub & Eatery was established on July 26, 1990. This family business is located in South Scranton at 1802 Cedar Avenue - Scranton, PA 18505. Call us at 570-346-9758 for take out orders.</p>
-
-
-        </div>
+      <p><b>Looking for the best Hot Wings in Northeast PA?</b></p>
+      <p>
+        Well, you have come to the right place! In addition to our famous hot
+        wings we have a full menu with something for everyone. We are a family
+        oriented restaurant in Scranton, PA we have a reputation for great food,
+        great people and the best hot wings in Northeast Pennsylvania.
+      </p>
+      <p>
+        Kelly's Wednesday Wing Night has become a very popular spot for Hot
+        Wings and ice cold beer served in a friendly family atmosphere. Our Hot
+        Wings have been honored with many awards in local wing contests and
+        media surveys throughout Northeastern Pennsylvania. In addition to our
+        wing night we have $2.00 domestic Pint night every Monday. Tuesday's are
+        Tini' Tuesday at Kelly's. We have Martini specials for $4.00. Every lent
+        we offer fish specials.
+      </p>
+      <p>
+        With more than 25 years in business we have established ourselves as the
+        place to go for Hot Wings in Scranton, PA! Kelly's pub & Eatery was
+        established on July 26, 1990. This family business is located in South
+        Scranton at 1802 Cedar Avenue - Scranton, PA 18505. Call us at
+        570-346-9758 for take out orders.
+      </p>
     </div>
+  </div>
 </div>
 <!-- End About -->
 
 <!-- Start Testimonials -->
-<div id="testimonials" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.testimonials.testimonials_img }}');">
-    <div class="overlay-container">
-        <div class="overlay"></div>
-        <div class="container-fluid">
-            <div id="testimonial-carousel">
-                {% for testimonial in site.data.testimonials %}
-                    <div class="testimonial-item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <svg style="background-color: rgba(0, 0, 0, 0.7);"class="icon icon-quote-left"><use xlink:href="#icon-trophy"></use></svg>
-                        <blockquote style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px;">
-                            <p > {{ testimonial.description }}</p>
-                            <footer>
-                                {{ testimonial.name }}
-                                <small>{{ testimonial.title }}</small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                {% endfor %}
-            </div>
+<div
+  id="testimonials"
+  class="testimonials parallax"
+  style="background-image: url('{{ site.baseurl }}/img/{{
+    site.testimonials.testimonials_img
+  }}');"
+>
+  <div class="overlay-container">
+    <div class="overlay"></div>
+    <div class="container-fluid">
+      <div id="testimonial-carousel">
+        {% for testimonial in site.data.testimonials %}
+        <div
+          class="testimonial-item"
+          style="display: flex; flex-direction: column; justify-content: center; align-items: center;"
+        >
+          <svg
+            style="background-color: rgba(0, 0, 0, 0.7);"
+            class="icon icon-quote-left"
+          >
+            <use xlink:href="#icon-trophy"></use>
+          </svg>
+          <blockquote
+            style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px;"
+          >
+            <p>{{ testimonial.description }}</p>
+            <footer>
+              {{ testimonial.name }}
+              <small>{{ testimonial.title }}</small>
+            </footer>
+          </blockquote>
         </div>
+        {% endfor %}
+      </div>
     </div>
+  </div>
 </div>
 <!-- End Testimonials -->
 
 <!-- Start Gallery -->
 <div id="gallery" class="gallery">
+  <h2 class="section-title">Photos</h2>
 
-    <h2 class="section-title">Photos</h2>
-
-    {% for images in site.data.gallery %}
-        <div class="gallery-item expandable-box">
-            <div class="">
-                <img src="{{ site.baseurl }}/img/gallery/{{ images.image_thumb }}" >
-            </div>
-       </div>
-    {% endfor %}
-
+  {% for images in site.data.gallery %}
+  <div class="gallery-item expandable-box">
+    <div class="">
+      <img src="{{ site.baseurl }}/img/gallery/{{ images.image_thumb }}" />
+    </div>
+  </div>
+  {% endfor %}
 </div>
 <!-- End Gallery -->
 
 <!-- Start Map -->
 <!-- <div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>"></div> -->
-<iframe id="location" style=" width:100%"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.2563883329067!2d-75.68067928419211!3d41.390238079263995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4df1a7303a1db%3A0xca6a3cffda8789d1!2s1802+Cedar+Ave%2C+Scranton%2C+PA+18505!5e0!3m2!1sen!2sus!4v1555361534577!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe
+  id="location"
+  style=" width:100%"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.2563883329067!2d-75.68067928419211!3d41.390238079263995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4df1a7303a1db%3A0xca6a3cffda8789d1!2s1802+Cedar+Ave%2C+Scranton%2C+PA+18505!5e0!3m2!1sen!2sus!4v1555361534577!5m2!1sen!2sus"
+  width="600"
+  height="450"
+  frameborder="0"
+  style="border:0"
+  allowfullscreen
+></iframe>
 <!-- End Map -->
