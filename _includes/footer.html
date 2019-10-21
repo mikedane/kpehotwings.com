@@ -1,18 +1,91 @@
 <!-- Start Footer -->
+
+<style>
+  .notif {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    padding: 18px;
+    background: white;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+</style>
+
+<div class="notif">
+  <div class="close-button">x</div>
+  Kelly's does not participate with any 3rd party delivery services, and will
+  not be responsible for the quality of any orders from such services.
+</div>
+
 <footer class="main-footer">
-    <div class="container-fluid">
-        
-        <ul class="social">
-            {% if site.facebook %}<li><a href="{{ site.facebook }}"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></li>{% endif %}
-            {% if site.twitter %}<li><a href="{{ site.twitter }}"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>{% endif %}
-            {% if site.instagram %}<li><a href="{{ site.instagram }}"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a></li>{% endif %}
-            {% if site.youtube %}<li><a href="{{ site.youtube }}"><svg class="icon icon-youtube"><use xlink:href="#icon-youtube"></use></svg></a></li>{% endif %}
-            {% if site.skype %}<li><a href="{{ site.skype }}"><svg class="icon icon-skype"><use xlink:href="#icon-skype"></use></svg></a></li>{% endif %}
-            {% if site.feed %}<li><a href="#"><svg class="icon icon-feed"><use xlink:href="#icon-feed"></use></svg></a></li>{% endif %}
-        </ul>
+  <div class="container-fluid">
+    <ul class="social">
+      {% if site.facebook %}
+      <li>
+        <a href="{{ site.facebook }}"
+          ><svg class="icon icon-facebook">
+            <use xlink:href="#icon-facebook"></use></svg
+        ></a>
+      </li>
+      {% endif %} {% if site.twitter %}
+      <li>
+        <a href="{{ site.twitter }}"
+          ><svg class="icon icon-twitter">
+            <use xlink:href="#icon-twitter"></use></svg
+        ></a>
+      </li>
+      {% endif %} {% if site.instagram %}
+      <li>
+        <a href="{{ site.instagram }}"
+          ><svg class="icon icon-instagram">
+            <use xlink:href="#icon-instagram"></use></svg
+        ></a>
+      </li>
+      {% endif %} {% if site.youtube %}
+      <li>
+        <a href="{{ site.youtube }}"
+          ><svg class="icon icon-youtube">
+            <use xlink:href="#icon-youtube"></use></svg
+        ></a>
+      </li>
+      {% endif %} {% if site.skype %}
+      <li>
+        <a href="{{ site.skype }}"
+          ><svg class="icon icon-skype">
+            <use xlink:href="#icon-skype"></use></svg
+        ></a>
+      </li>
+      {% endif %} {% if site.feed %}
+      <li>
+        <a href="#"
+          ><svg class="icon icon-feed"><use xlink:href="#icon-feed"></use></svg
+        ></a>
+      </li>
+      {% endif %}
+    </ul>
 
-        <small>{% if site.copyright %} {{ site.copyright }} {% endif %}</small>
-
-    </div>
+    <small>{% if site.copyright %} {{ site.copyright }} {% endif %}</small>
+  </div>
 </footer>
 <!-- End Footer -->
+
+<script>
+  const notif = document.querySelector('.notif');
+  document.querySelector('.close-button').addEventListener('click', () => {
+    console.log('Clicked', notif);
+    notif.remove();
+  });
+</script>
