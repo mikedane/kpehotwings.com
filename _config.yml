@@ -24,8 +24,8 @@ contact:
     address: 1802 Cedar Avenue<br>Scranton PA<br>18505
 
 # Opening hours
-monday_tuesday_thursday: 4:00PM – 11:00PM
-wednesday_friday_saturday: 4:00PM – 11:30PM
+monday_tuesday_wednesday_thursday: 4:00PM – 10:00PM
+friday_saturday: 4:00PM – 11:00PM
 sunday: Closed
 
 # Testimonials
