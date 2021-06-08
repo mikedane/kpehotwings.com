@@ -7,9 +7,9 @@ logo_url: svg/min/logo.svg
 
 # Hero
 hero:
-    hero_img: hero.png
-    hero_title: Home of Award Winning Wings
-    hero_description: Plus burgers, sandwiches, salads & full service bar offered in a down-to-earth setting with Irish touches.
+  hero_img: hero.png
+  hero_title: Home of Award Winning Wings
+  hero_description: Plus burgers, sandwiches, salads & full service bar offered in a down-to-earth setting with Irish touches.
 
 # Menu
 menu-file: kellys_pub_eatery_menu.pdf
@@ -19,24 +19,22 @@ api_token: # Enter API token here
 
 # Contact info
 contact:
-    phone: 570-346-9758
-    email: kellyspubandeatery@gmail.com
-    address: 1802 Cedar Avenue<br>Scranton PA<br>18505
+  phone: 570-346-9758
+  email: kellyspubandeatery@gmail.com
+  address: 1802 Cedar Avenue<br>Scranton PA<br>18505
 
 # Opening hours
-monday_tuesday_wednesday_thursday: 4:00PM – 10:00PM
-friday_saturday: 4:00PM – 11:00PM
-sunday: Closed
+monday_saturday: 4:00PM – 10:00PM
 
 # Testimonials
 testimonials:
-    testimonials_img: parallax.png
+  testimonials_img: parallax.png
 
 # Map
 map:
-    zoom: 17
-    address: 1802 Cedar Avenue, Scranton PA 18505
-    address_details: svg/min/logo.svg
+  zoom: 17
+  address: 1802 Cedar Avenue, Scranton PA 18505
+  address_details: svg/min/logo.svg
 
 # Social settings
 facebook: https://www.facebook.com/Kellys-Pub-and-Eatery-180959338695076/
@@ -47,15 +45,16 @@ copyright: © 2020 Kelly's Pub & Eatery - All rights reserved
 # Build settings
 markdown: kramdown
 
-exclude: [
+exclude:
+  [
     package.json,
     Gruntfile.js,
     node_modules,
     .sass-cache,
     Gemfile,
     Gemfile.lock,
-    .gitignore
-]
+    .gitignore,
+  ]
 
 # Theme Settings
 analytics:
