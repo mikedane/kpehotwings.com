@@ -12,7 +12,7 @@ hero:
   hero_description: Plus burgers, sandwiches, salads & full service bar offered in a down-to-earth setting with Irish touches.
 
 # Menu
-menu-file: kellys_pub_eatery_menu.pdf
+menu-file: kellys_pub_eatery_menu_2.0.pdf
 
 # Contact form
 api_token: # Enter API token here
